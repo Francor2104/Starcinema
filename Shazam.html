@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shazam</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/Star.png" rel="icon">
+    <link rel="shortcut icon" href="assets/imagenes/star.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/pelicula.css">
+</head>
+<body>
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+    
+         <a href="index.html" class="logo me-auto"><img src="assets/imagenes/Star.png" alt="" class="img-fluid"> Starcinema</a>
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto" href="index.html">Inicio</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+    
+        </div>
+      </header>
+    <br><br><br><br>
+    
+        <section class="movie-info">
+            <div class="movie-poster">
+                <img src="assets/imagenes/Shazam.jpg" alt="Movie Poster">
+                <h2 class="movie-title">Shazam! La furia de los dioses</h2>
+            </div>
+            <div class="movie-details">
+                <h2 class="movie-heading">Detalles de la película</h2>
+                <p>Duracion: 2H 10M</p>
+                <p>Director: David F. Sandberg</p>
+                <p>Reparto: Zachary Levi, Asher Angel, Grace Fulton, Marta Milans</p>
+                <div class="movie-description">
+                    <h2 class="movie-heading">Sinopsis</h2>
+                    <p>Billy Batson y sus hermanos adoptivos Freddy, Mary, Pedro, Eugene y Darla, también dotados de superpoderes, tienen que enfrentarse a las tres hijas de Atlas: Hespera, Kalypso y Anthea.</p>
+                </div>
+
+                  <div class="movie-showtimes">
+                   <h2 class="movie-heading">Funciones Disponibles</h2>
+                    <div class="showtimes-list">
+                     <ul>
+                       <li><button value="Lun - 4:00PM - Sala B" onclick="factura(this.value)">Lunes - 4:00PM</button></li>
+                       <li><button value="Mar - 5:30PM - Sala B" onclick="factura(this.value)">Martes - 5:30PM</button></li>
+                       <li><button value="Mie - 8:40PM - Sala B" onclick="factura(this.value)">Miercoles - 8:40PM</button></li>
+                       <li><button value="Jue - 2:00PM - Sala B" onclick="factura(this.value)">Jueves - 2:00PM</button></li>
+                       <li><button value="Vie - 5:00PM - Sala B" onclick="factura(this.value)">Viernes - 5:00PM</button></li>
+                       <li><button value="Sab - 6:30PM - Sala B" onclick="factura(this.value)">Sabado - 6:30PM</button></li>
+                       <li><button value="Dom - 4:15PM - Sala B" onclick="factura(this.value)">Domingo - 4:15PM</button></li>
+                     </ul>
+                    </div>
+                  </div>
+            </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalAsientos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Compra de boletos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="POST" id="formboleto">
+          <label for="boleto">Introduzca la cantidad de boletos deseada (Maximo 30)</label><input class="form-control" id="numero" type="number" name="boleto" min="1" max="30">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Confirmar</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        </section>
+
+
+          <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/template.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+</html>
+</body>
+</html>
